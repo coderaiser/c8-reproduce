@@ -1,0 +1,55 @@
+{
+  "name": "changelog-io",
+  "version": "6.0.6",
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
+  "description": "Generate changelog",
+  "main": "lib/changelog.js",
+  "type": "module",
+  "bin": {
+    "changelog": "bin/changelog.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/changelog-io.git"
+  },
+  "keywords": [
+    "changelog"
+  ],
+  "scripts": {
+    "test": "madrun test",
+    "coverage": "madrun coverage",
+    "lint": "madrun lint",
+    "fresh:lint": "madrun fresh:lint",
+    "lint:fresh": "madrun lint:fresh",
+    "fix:lint": "madrun fix:lint",
+    "report": "madrun report",
+    "watcher": "madrun watcher",
+    "watch:test": "madrun watch:test",
+    "watch:lint": "madrun watch:lint",
+    "watch:tape": "madrun watch:tape",
+    "watch:coverage": "madrun watch:coverage"
+  },
+  "dependencies": {
+    "currify": "^4.0.0",
+    "minimist": "^1.2.0",
+    "read-pkg-up": "^8.0.0",
+    "rendy": "^3.0.1",
+    "shortdate": "^2.0.0",
+    "try-catch": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "c8": "^7.8.0",
+    "eslint": "^8.0.0-beta.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-putout": "^9.2.1",
+    "madrun": "^8.8.1",
+    "mock-import": "^1.6.0",
+    "montag": "^1.2.1",
+    "putout": "^19.0.0",
+    "supertape": "^6.0.5"
+  }
+}
