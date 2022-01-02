@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "test": "madrun test",
+    "debug": "madrun debug",
     "coverage": "madrun coverage",
     "lint": "madrun lint",
     "fresh:lint": "madrun fresh:lint",
@@ -32,7 +33,6 @@
   "dependencies": {
     "currify": "^4.0.0",
     "minimist": "^1.2.0",
-    "read-pkg-up": "^8.0.0",
     "rendy": "^3.0.1",
     "shortdate": "^2.0.0",
     "try-catch": "^3.0.0"
@@ -47,7 +47,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-putout": "^12.9.1",
     "madrun": "^8.8.1",
-    "mock-import": "^2.7.5",
+    "mock-import": "2.7.8",
     "montag": "^1.2.1",
     "putout": "^23.5.0",
     "supertape": "^6.0.5"

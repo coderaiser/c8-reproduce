@@ -10,7 +10,8 @@ const testEnv = {
 
 export default {
     'test': () => [testEnv, `tape 'test/**/*.js' 'lib/**/*.spec.js'`],
-    'coverage': async () => [testEnv, `c8 --exclude="lib/**/{fixture,*.spec.js}" ${await cutEnv('test')}`],
+    'debug': async () => [testEnv, `node --inspect-brk --inspect=0.0.0.0 ${await cutEnv('coverage')}`],
+    'coverage': async () => [testEnv, `node_modules/.bin/c8 --exclude="lib/**/{fixture,*.spec.js}" ${await cutEnv('test')}`],
     'lint': () => 'putout .',
     'fresh:lint': () => run('lint', '--fresh'),
     'lint:fresh': () => run('lint', '--fresh'),
