@@ -6,3 +6,7 @@
 ## ISSUES
 - ⏳  [c8](https://github.com/bcoe/c8/issues/325)
 - ⏳ [nodejs]()
+
+## Posibile solutions
+
+- 🎩[`ESCover`](https://github.com/coderaiser/escover): coverage for EcmaScript Modules, based on 🐊[`Putout`](https://github.com/coderaiser/putout) and node.js loaders.
