@@ -24,7 +24,7 @@ export default async (name, program) => {
 };
 ```
 
-I need to `mock` `readFile` and `execSync` somehow. If I don't use transpiler-based solutions (like `tap`, `jest`, `ava` etc), I have only `loaders` way of doing thing. I'm using 📼[`Supertape`](https://github.com/coderaiser/supertape) to get thins fast, so I need a way to mock `EcmaScript Modules` without transpiling (to have things fast). So I use some transformation, but it's very simple and works with help of loaders which is very fast.
+I need to `mock` `readFile` and `execSync` somehow. If I don't use transpiler-based solutions (like `tap`, `jest`, `ava` etc), I have only `loaders` way of doing thing. I'm using 📼[`Supertape`](https://github.com/coderaiser/supertape) simplest test runner, so I need a way to mock `EcmaScript Modules` without transpiling (it eats a lot of time). So I use some transformation, but it's very simple and works with help of loaders which are very fast.
 
 ## ISSUES
 - ⏳  [c8](https://github.com/bcoe/c8/issues/325): removes all query parameters (`?mock-import-count=x`, used by `mock-import`); 
